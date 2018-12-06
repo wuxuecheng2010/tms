@@ -130,5 +130,6 @@
 		<module>tms-dao</module>
 		<module>tms-service</module>
 		<module>tms-web</module>
+		<module>tms-route-server</module>
 	</modules>
 </project>

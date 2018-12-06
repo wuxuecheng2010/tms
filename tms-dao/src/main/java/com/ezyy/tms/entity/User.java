@@ -19,7 +19,7 @@ public class User implements Serializable{
 	private Integer uid;
 	private String username;
 	private String password;
-	//private Set<Role> roles;
+	private Set<Role> roles;
 	
 
 }

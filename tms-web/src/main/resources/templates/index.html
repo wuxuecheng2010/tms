@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Title</title>
+<link type="text/css" rel="stylesheet"
+	href="/static/plugs/bootstrap-3.3.7-dist/css/bootstrap.css" />
+<script src="/static/plugs/jquery-2.1.1/jquery-2.1.1.min.js"></script>
+<script src="/static/plugs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+	<h1>欢迎${user.username }光临!请选择你的操作:</h1>
+	<br>
+	<ul>
+
+		<p shiro:hasPermission="add">
+			<a href="user/add">添加</a>
+		</p>
+		<p shiro:hasPermission="delete">
+			<a href="user/delete">删除</a>
+		</p>
+		<p shiro:hasPermission="query">
+			<a href="user/query">查询</a>
+		</p>
+		<p shiro:hasPermission="update">
+			<a href="user/update">更新</a>
+		</p>
+
+
+		<p shiro:hasRole="admin">
+			<a href="user/role">ROLE_ADMIN</a></li>
+		</p>
+
+	</ul>
+	<a href="logOut">点我注销</a>
+
+</body>
+</html>
